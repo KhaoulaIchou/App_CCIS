@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-16/lib" />
+      <root url="jar://$USER_HOME$/Downloads/poi-5.0.0/poi-5.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/poi-5.0.0/poi-ooxml-5.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/poi-5.0.0/poi-ooxml-full-5.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/poi-5.0.0/poi-ooxml-lite-5.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-compress-1.20/commons-compress-1.20.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/ooxml-lib/xmlbeans-4.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4/commons-collections4-4.4-tests.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4/commons-collections4-4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../OJDBC/ojdbc10.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.8.0/commons-io-2.8.0-tests.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.8.0/commons-io-2.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4/commons-collections4-4.4-javadoc.jar!/" />
+      <root url="file://$USER_HOME$/Downloads/poi-bin-5.0.0-20210120/poi-5.0.0/docs/apidocs/dev" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.8.0/commons-io-2.8.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-16/lib" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4/commons-collections4-4.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-collections4-4.4/commons-collections4-4.4-test-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.8.0/commons-io-2.8.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/commons-io-2.8.0/commons-io-2.8.0-test-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-16/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-16/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

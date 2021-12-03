@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="3174.0" prefWidth="1503.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="3171.0" prefWidth="1504.0" style="-fx-background-color: #FFF;">
+         <children>
+            <VBox layoutX="-3.0" layoutY="-3.0" prefHeight="3174.0" prefWidth="444.0" style="-fx-background-color: #a9a9a9;">
+               <children>
+                  <Pane prefHeight="70.0" prefWidth="397.0" />
+                  <ImageView fitHeight="150.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@DocImg/logo-ccis.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="117.0" prefWidth="444.0">
+                     <children>
+                        <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="21.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@DocImg/menu-4-48.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="84.0" layoutY="61.0" text="Menu">
+                           <font>
+                              <Font name="Segoe UI Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Button id="DA" fx:id="DAdministrative" alignment="CENTER" mnemonicParsing="false" onAction="#DeAdministrativeAction" prefHeight="101.0" prefWidth="453.0" stylesheets="@ccis.css" text="Démarche Administrative">
+                     <font>
+                        <Font name="Segoe UI Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="EE" fx:id="EEntrepriseAction" mnemonicParsing="false" onAction="#EspaceEntreprise" prefHeight="102.0" prefWidth="464.0" stylesheets="@ccis.css" text="  Espace de l'entreprise        ">
+                     <font>
+                        <Font name="Segoe UI Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button id="Guichet" fx:id="GuichetAction" mnemonicParsing="false" onAction="#Guichet" prefHeight="99.0" prefWidth="446.0" stylesheets="@ccis.css" text="        Guichet  de proximité             ">
+                     <font>
+                        <Font name="Segoe UI Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="root" layoutX="441.0" prefHeight="3209.0" prefWidth="1063.0">
+               <children>
+                  <Button layoutX="921.0" layoutY="94.0" minWidth="53.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="83.0" prefWidth="77.0" style="-fx-background-color: #FFFFFF;" />
+                  <ImageView fitHeight="68.0" fitWidth="35.0" layoutX="942.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@DocImg/logout-64.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

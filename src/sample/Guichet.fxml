@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="2710.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Guichet">
+   <children>
+      <Pane fx:id="DemAdministrative" prefHeight="2794.0" prefWidth="1079.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Label layoutX="70.0" layoutY="114.0" text="Guichet">
+               <font>
+                  <Font name="Segoe UI Bold" size="36.0" />
+               </font>
+            </Label>
+            <Separator layoutX="70.0" layoutY="165.0" prefHeight="3.0" prefWidth="88.0" style="-fx-background-color: #000;" />
+            <Button layoutX="944.0" layoutY="93.0" minWidth="53.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="83.0" prefWidth="77.0" style="-fx-background-color: #FFFFFF;" />
+            <ImageView fitHeight="68.0" fitWidth="35.0" layoutX="965.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@DocImg/logout-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="234.0" text="Informations de la visite">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="70.0" layoutY="263.0" prefHeight="0.0" prefWidth="71.0" style="-fx-background-color: #000;" />
+            <Label layoutX="70.0" layoutY="303.0" text="Date de contact">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="Date4" layoutX="327.0" layoutY="300.0" prefHeight="25.0" prefWidth="235.0" />
+            <Label layoutX="70.0" layoutY="387.0" text="Lieu">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ComboLieu2" layoutX="327.0" layoutY="384.0" prefHeight="25.0" prefWidth="238.0" promptText="MARRAKECH" />
+            <Label layoutX="72.0" layoutY="480.0" text="Objet de la visite">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Demande2" layoutX="327.0" layoutY="524.0" mnemonicParsing="false" text="Demande d’aide au montage du dossier / Autre organisme">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Objt" />
+               </toggleGroup>
+            </RadioButton>
+            <Label layoutX="71.0" layoutY="596.0" text="Identification du demandeur ">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="71.0" layoutY="627.0" prefHeight="3.0" prefWidth="93.0" style="-fx-background-color: #000;" />
+            <Label layoutX="69.0" layoutY="680.0" text="Nom et Prénom">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NomPrenom2" layoutX="329.0" layoutY="687.0" onKeyReleased="#NomDeno" prefHeight="25.0" prefWidth="232.0" />
+            <Label layoutX="73.0" layoutY="855.0" text="Téléphone (GSM) ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Tel2" layoutX="331.0" layoutY="852.0" prefHeight="25.0" prefWidth="236.0" />
+            <Label layoutX="76.0" layoutY="931.0" text="Email de contact ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Email2" layoutX="331.0" layoutY="928.0" prefHeight="25.0" prefWidth="236.0" />
+            <Label layoutX="73.0" layoutY="1002.0" text="Adresse de contact ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Adresse2" layoutX="331.0" layoutY="999.0" prefHeight="25.0" prefWidth="237.0" />
+            <Label layoutX="78.0" layoutY="1075.0" text="Ville">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Ville2" layoutX="328.0" layoutY="1072.0" prefHeight="25.0" prefWidth="236.0" />
+            <Label layoutX="79.0" layoutY="1171.0" text="Identification de l'entreprise">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="83.0" layoutY="1202.0" prefHeight="3.0" prefWidth="92.0" style="-fx-background-color: #000;" />
+            <Label layoutX="75.0" layoutY="1244.0" text="Dénomination">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Deno2" layoutX="307.0" layoutY="1241.0" prefHeight="25.0" prefWidth="231.0" />
+            <Label layoutX="75.0" layoutY="1323.0" prefHeight="19.0" prefWidth="71.0" text="CODE ICE">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ICE2" layoutX="307.0" layoutY="1320.0" prefHeight="25.0" prefWidth="231.0" />
+            <Label layoutX="76.0" layoutY="1476.0" prefHeight="19.0" prefWidth="191.0" text="Site Web de l’entreprise">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="site2" layoutX="307.0" layoutY="1473.0" prefHeight="25.0" prefWidth="232.0" />
+            <Label layoutX="78.0" layoutY="1547.0" text="Forme juridique ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="A2" layoutX="667.0" layoutY="1594.0" />
+            <CheckBox fx:id="accepter2" layoutX="366.0" layoutY="959.0" mnemonicParsing="false" text="J’accepte de recevoir les envois de la CCIS">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="73.0" layoutY="2185.0" text="Cadre réservé à la CCIS ">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="certifier2" layoutX="170.0" layoutY="2102.0" mnemonicParsing="false" text="Je certifie l’authenticité des informations susmentionnées et autorise la CCIS-MS à les utiliser pour toute fin utile ">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </CheckBox>
+            <Separator layoutX="72.0" layoutY="2218.0" prefHeight="1.0" prefWidth="129.0" style="-fx-background-color: #000;" />
+            <Label layoutX="78.0" layoutY="1658.0" text="Taille de l’entreprise ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="PP2" layoutX="304.0" layoutY="1547.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="179.0" text="PP (Personne physique)">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="forme" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="SARL2" layoutX="542.0" layoutY="1547.0" mnemonicParsing="false" text="SARL" toggleGroup="$forme">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="SA2" layoutX="678.0" layoutY="1547.0" mnemonicParsing="false" text="SA " toggleGroup="$forme">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="AutoE2" layoutX="306.0" layoutY="1597.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="149.0" text="Auto-entrepreneur" toggleGroup="$forme">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton layoutX="541.0" layoutY="1597.0" mnemonicParsing="false" text="Autre à préciser " toggleGroup="$forme">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Petite2" layoutX="314.0" layoutY="1658.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="115.0" text="Petite (&lt; 10 P)">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="taille" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Moyenne2" layoutX="310.0" layoutY="1711.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="168.0" text="Moyenne (10 – 200P)" toggleGroup="$taille">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Grande2" layoutX="313.0" layoutY="1762.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="135.0" text="Grande (&gt; 200P)" toggleGroup="$taille">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="82.0" layoutY="1837.0" text="Secteur d’activité">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="Industrie2" layoutX="311.0" layoutY="1835.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="88.0" text="Industrie">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Commerce2" layoutX="309.0" layoutY="1889.0" mnemonicParsing="false" text="Commerce">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Services2" layoutX="309.0" layoutY="1946.0" mnemonicParsing="false" text="Services">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="79.0" layoutY="2021.0" text="Activité">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Activité2" layoutX="310.0" layoutY="2018.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="71.0" layoutY="2269.0" text="Nom et prénom du représentant de la CCIS ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="RepCCIS2" layoutX="461.0" layoutY="2266.0" prefHeight="25.0" prefWidth="275.0" />
+            <Label layoutX="71.0" layoutY="2342.0" text="Sa qualité ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="qualité2" layoutX="461.0" layoutY="2339.0" prefHeight="25.0" prefWidth="274.0" />
+            <Label layoutX="69.0" layoutY="2419.0" prefHeight="19.0" prefWidth="119.0" text="Observations">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Obrev2" layoutX="459.0" layoutY="2429.0" prefHeight="79.0" prefWidth="278.0" />
+            <Button id="valider" layoutX="194.0" layoutY="2632.0" mnemonicParsing="false" onAction="#validerGuichet" prefHeight="45.0" prefWidth="179.0" stylesheets="@ccis.css" text="valider">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="1398.0" text="Nom du représentant légal ">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NomRep2" layoutX="306.0" layoutY="1395.0" prefHeight="25.0" prefWidth="234.0" />
+            <Label layoutX="71.0" layoutY="757.0" text="Statut">
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Entre2" layoutX="330.0" layoutY="767.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="120.0" text="Entrepreneur">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="statut" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Porteur2" layoutX="330.0" layoutY="809.0" mnemonicParsing="false" text="Porteur de projet" toggleGroup="$statut">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="Demande1" layoutX="327.0" layoutY="481.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="362.0" text="Demande d’aide au montage du dossier / Maroc PME">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button id="valider" layoutX="611.0" layoutY="2626.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="45.0" prefWidth="179.0" stylesheets="@ccis.css" text="Réinitialiser">
+               <font>
+                  <Font name="Segoe UI Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

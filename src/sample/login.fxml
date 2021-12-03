@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="755.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.login">
+    <children>
+        <TextField fx:id="UserField" layoutX="218.0" layoutY="179.0" prefHeight="46.0" prefWidth="271.0" promptText="Email d'utilisateur" style="-fx-background-color: transparent; -fx-border-color: #4682B4; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Segoe UI" size="16.0" />
+            </font>
+        </TextField>
+        <Button id="login" layoutX="96.0" layoutY="437.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="40.0" prefWidth="147.0" stylesheets="@ccis.css" text="Se connecter" textFill="STEELBLUE">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button id="cancel" layoutX="495.0" layoutY="437.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="40.0" prefWidth="147.0" stylesheets="@ccis.css" text="Annuler" textFill="STEELBLUE">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="pwdField" layoutX="218.0" layoutY="308.0" prefHeight="46.0" prefWidth="271.0" promptText="Mot de passe" style="-fx-background-color: transparent; -fx-border-color: #4682B4; -fx-border-width: 0px 0px 2px 0px;">
+            <font>
+                <Font name="Segoe UI" size="16.0" />
+            </font>
+        </PasswordField>
+        <Hyperlink layoutX="329.0" layoutY="537.0" onAction="#SignAction" prefHeight="31.0" prefWidth="114.0" style="-fx-text-fill: #4682b4;" text="S'inscrire">
+            <font>
+                <Font name="Segoe UI Bold" size="18.0" />
+            </font>
+        </Hyperlink>
+        <ImageView fitHeight="112.0" fitWidth="147.0" layoutX="288.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@DocImg/ccis.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="20.0" fitWidth="21.0" layoutX="468.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@DocImg/email-3-16.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="468.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@DocImg/key-4-16.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
